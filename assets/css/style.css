@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+  
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ======================================= header section start =================================================== */
+header {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    padding: 0px 125px;
+    background: #131E3A;
+    align-items: center;
+    font-weight: 300;
+    justify-content: space-between;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+header ul li a {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header ul li a.active {
+    color: #cd375d;
+}
+
+/* media query */
+@media screen and (max-width:767px) {
+    header .nav {
+        display: none;
+    }
+}
+
+/*===================================================== header section end ===================================== */
+/*===================================================== banner section start ===================================== */
+.banner {
+    width: 100%;
+    height: 650px;
+    color: #fff;
+    padding: 0px 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 100px;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.banner h2 {
+    font-size: 30px;
+    position: absolute;
+    top: 260px;
+}
+
+.banner form {
+    width: 80%;
+    bottom: 50px;
+    height: auto;
+    display: flex;
+
+    padding: 2px 8px;
+    position: absolute;
+    align-items: center;
+    background: #5C327A;
+}
+
+.banner form button {
+    width: 90px;
+    height: 35px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: #43215c;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.banner form button.active {
+    background-color: #cd375d;
+}
+
+.banner form label {
+    display: none;
+}
+
+.banner form .search-form {
+    margin-top: 8px;
+}
+
+.banner form .search-form input,
+.banner form .search-form select {
+    width: 18%;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.banner form button.smt {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #cd375d;
+}
+
+#cars {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-top: 8px;
+}
+
+#cars option {
+    background-color: transparent;
+}
+
+.banner form .search-form input[type="checkbox"] {
+    width: 5%;
+    height: 0%;
+}
+
+/* media query */
+@media (max-width: 991px) {
+
+    .banner form .search-form input,
+    .banner form .search-form select {
+        width: 30%;
+    }
+
+    .banner form {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 767px){
+.banner form .searchForm input, .banner form .searchForm select {
+    width: 46%;
+}
+
+}
+@media (max-width: 563px){
+    .banner h1{
+        font-size: 30px;
+        top: 90px;
+    } 
+    .banner h2{
+        top: 193px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .banner h1{
+        font-size: 25px;
+        top: 100px;
+    } 
+    .banner h2{
+        top: 190px;
+        font-size: 20px;
+    }
+  }
+  
+/*===================================================== banner section end ===================================== */
+/*===================================================== fun section start ===================================== */
+.fun {
+    width: 100%;
+    height: 400px;
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/banner2.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.fun h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.fun ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fun ul li {
+    width: 130px;
+    height: 125px;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.fun ul li div strong {
+    font-size: 15px;
+}
+
+.fun ul li div p {
+    font-weight: normal;
+    font-size: 10px;
+
+}
+
+/* media query */
+@media (max-width: 991px) {
+    .fun ul li {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+.fun ul {
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 130px 130px;
+    grid-gap: 10px;
+}
+}
+@media (max-width: 563px){
+    .fun ul{
+        margin-left: 0%;
+    }
+}
+/*===================================================== fun section end ===================================== */
+/*===================================================== newsletter section start ===================================== */
+.newsletter {
+    width: 100%;
+    padding: 50px 125px;
+    height: 300px;
+    background: linear-gradient(rgba(33, 22, 47, 0.7), rgba(33, 22, 47, 0.7)), url('../images/newslater.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.newsletter h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.newsletter p {
+
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.newsletter label {
+    display: none;
+}
+
+input#email {
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+input[type="button"] {
+
+    padding: 12px 60px;
+    color: #20162f;
+    border: none;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+/* media query */
+@media (max-width: 992px) {
+    .newsletter {
+        padding: 0px;
+    }
+
+    .newsletter h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 563px){
+    .newsletter h2{
+        font-size: 22px;
+     
+    } 
+    .newsletter p{
+        font-size: 10px;
+    }
+    input[type="button"] {
+      
+        margin-top: 10px;
+        width: 96%;
+    }
+}
+/*===================================================== newsletter section end ===================================== */
+/*===================================================== destination section start ===================================== */
+.destination {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 50px 125px;
+    background: #20162f;
+    display: inline-block;
+
+}
+
+.destination h2 {
+    text-align: center;
+}
+
+.destination ul {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: 400px 420px;
+    grid-gap: 30px 60px;
+}
+
+.destination ul li {
+    list-style: none;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    border: 5px solid #fff;
+}
+
+.destination ul li img {
+    width: 100%;
+}
+
+.destination ul li div.content {
+    color: #000;
+    padding: 20px;
+}
+
+div.content span {
+    color: #DD6D58;
+}
+
+/* media query  */
+@media (max-width: 992px) {
+    .destination {
+        padding: 50px 20px;
+    }
+
+    .destination ul {
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+}
+
+/*===================================================== destination section end ===================================== */
+/*===================================================== estimate section start ===================================== */
+.estimate {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 125px;
+    background-color: #664CAD;
+    color: #fff;
+    position: relative;
+}
+
+.estimate h2 {
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: normal
+}
+
+.estimate h4 {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.estimate label {
+    display: none;
+}
+
+input[type="submit"] {
+    background: #FE9102;
+    padding: 5px 15px;
+    border: none;
+}
+
+.estimate form select,
+.estimate form input {
+    width: 15%;
+    height: 40px;
+    padding: 2px 8px;
+    align-items: center;
+}
+
+.estimate img {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    top: 0;
+}
+@media screen and (max-width:768px){
+  .estimate img{
+    display: none;
+  }  
+}
+@media (max-width: 480px) {
+    .estimate img{
+        display: none;
+      }   
+}
+
+/*===================================================== estimate section end ===================================== */
+/*===================================================== blog section start ===================================== */
+.blog {
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+}
+
+.blog h2 {
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.blog h2+p {
+    text-align: center;
+    padding: 0px 200px;
+    margin-bottom: 50px;
+}
+
+.blog-content div {
+    padding: 0 10px 10px 20px;
+    display: flex;
+}
+
+.blog-content {
+    margin: 10px auto;
+    display: flex;
+}
+
+.blog-content div div {
+    display: inline;
+}
+
+.blog-content div img {
+    width: 150px;
+    height: 150px;
+}
+
+/* media query */
+@media (max-width: 992px) {
+    .blog h2+p {
+        padding: 0px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+}
+
+/*===================================================== blog section end ===================================== */
+/*===================================================== footer section start ===================================== */
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/banner2.jpg');
+    background-size: 100% 100%;
+    background-position: center top;
+
+}
+
+.topfoot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    color: #918e97;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    color: #918e97;
+}
+
+.footer ul li a {
+    color: #918e97;
+}
+
+.footer ul li span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer .site div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .site .inner {
+    margin-right: 50px;
+}
+
+.footlogo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.foot-menu {
+    margin-top: 8px;
+}
+
+.foot-menu ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.foot-menu ul li a {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.foot-menu p {
+    color: #918e97;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.social ul li {
+    margin: 5px;
+}
+
+.social ul li a {
+    color: #000;
+    background-color: #918e97;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+/* media query */
+@media screen and (max-width:767px) {
+    .topfoot{
+        flex-direction: column;
+        align-items: center;
+        /* display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: auto;
+     padding: 0 50px; */
+    }   
+    .footlogo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*===================================================== footer section end ===================================== */
+/*===================================================== media query start ===================================== */
+@media screen and (max-width:1199px) {
+
+    header,
+    .banner,
+    .fun,
+    .newsletter,
+    .destination,
+    .estimate,
+    .blog,
+    .footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    header,
+    .banner,
+    .fun,
+    .newsletter,
+    .destination,
+    .estimate,
+    .blog,
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/*===================================================== media query end ===================================== */
