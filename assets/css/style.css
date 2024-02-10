@@ -168,10 +168,13 @@ header ul li a.active {
         flex-direction: column;
     }
     .banner h1 {
-        top: 60px;
+        top: 55px;
+        
+    }
     }
     .banner h2 {
-        top: 193px;
+        top: 220px;
+        font-size: 17px;
     }
     .banner form button.smt {
         width: 280px;
