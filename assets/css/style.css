@@ -189,7 +189,7 @@ header ul li a.active {
     .banner h2 {
         top: 156px;}
         .banner form{
-            left: 15% !important;
+            left: 8% !important;
         }
 }
 
@@ -238,12 +238,13 @@ header ul li a.active {
 }
 
 /* media query */
-@media (max-width: 991px) {
-    .fun ul li {
-        width: 105px;
-        height: 115px;
-        font-size: 35px;
-    }
+
+@media screen and (max-width: 991px){
+.fun ul li {
+    width: 105px;
+    height: 115px;
+    font-size: 20px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -259,7 +260,7 @@ header ul li a.active {
 @media (max-width: 575px) {
     .fun  {
         padding-left: 0px !important;
-        padding-right: 40px ;
+        padding-right: 40px !important;
     }
 }
 
@@ -469,7 +470,7 @@ input[type="submit"] {
     .estimate form input {
         width: 100%;
         display: block;
-        margin: 8px !important;
+         margin: 8px !important;
     }
 }
 
@@ -635,9 +636,51 @@ input[type="submit"] {
 }
 
 /* media query */
-@media screen and (max-width:767px) {
-   
+@media screen and (max-width:991px){
+    .topfoot{
+        display: grid;
+        grid-template-columns: repeat(2,33.33%);
+        grid-template-rows: auto;
+    }
+    .footer .site div {
+        display: block;
+        align-items: center;
+    }
+    .footer .site .inner {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
 }
+@media screen and (max-width:575px) {
+    .topfoot {
+    
+        flex-direction: column;
+    }
+    .country {
+        margin-bottom: 50px;
+    }
+    .city {
+        margin-bottom: 50px;
+    }
+    .footer .site div {
+        flex-direction: column;
+    }
+    .footer .site .inner {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .footlogo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-menu ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
+
 
 
 /*===================================================== footer section end ===================================== */
@@ -646,37 +689,14 @@ input[type="submit"] {
     header,.banner,
     .fun, .newslatter,
     .destination, .estimate,
-    .blog, footer{
+    .blog, .footer{
         padding-left:50px;
         padding-right:50px;
     }
-    .banner form {
-        width: 86%;
-    }
-    .banner form .searchForm input, 
-    .banner form .searchForm select {
-        width: 17%;
-    }
-    .banner form button.smt {
-        float: right !important;
-        margin-left: 0px;
-    }
+  
 }
 
-@media screen and (max-width:991px) {
-    .fun ul li {
-        width: 105px;
-        height: 115px;
-        font-size: 35px;
-    }
-    .blog-content {
-        display: block;
-    }
-    footer .topfoot .left,
-    footer .topfoot .right{
-        display: block;
-    }
-}
+
 
 @media screen and (max-width:767px){
     header,.banner,
@@ -689,40 +709,7 @@ input[type="submit"] {
     header .nav{
         display: none;
     }
-    .banner form {
-        width: auto;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        left: 25%;
-        border-radius: 5px;
-        flex-direction: column;
-    }
-    .banner form .searchForm input, 
-    .banner form .searchForm select {
-        display: block;
-        width: 100%;
-    }
-    .banner form .searchForm span{
-        display: none;
-    }
-    .banner form button.smt {
-        width: 280px;
-        height: 35px;
-        border-radius: 0px;
-        margin: 10px auto;
-    }
-    .fun ul {
-        margin-left: 8%;
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 130px 130px;
-        grid-gap: 10px;
-    }
-    .destination ul {
-        grid-template-columns: repeat(2, 47%);
-        grid-template-rows: 400px 400px 400px 400px;
-    }
+   
 }
 @media screen and (max-width:575px){
     
