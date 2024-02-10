@@ -636,23 +636,8 @@ input[type="submit"] {
 }
 
 /* media query */
-@media screen and (max-width:991px){
-    .topfoot{
-        display: grid;
-        grid-template-columns: repeat(2,33.33%);
-        grid-template-rows: auto;
-    }
-    .footer .site div {
-        display: block;
-        align-items: center;
-    }
-    .footer .site .inner {
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
 
-}
-@media screen and (max-width:575px) {
+@media screen and (max-width:991px) {
     .topfoot {
     
         flex-direction: column;
