@@ -16,7 +16,7 @@ ul {
 }
 
 h2 {
-  
+
     color: #fff;
     margin-bottom: 40px;
 }
@@ -67,30 +67,30 @@ header ul li a.active {
     height: 650px;
     color: #fff;
     padding: 0px 125px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner.jpg);
     background-size: 100% 100%;
     position: relative;
 }
 
 .banner h1 {
-    position: absolute;
     top: 100px;
     font-size: 50px;
+    position: absolute;
     font-weight: normal;
 }
 
 .banner h2 {
+    top: 230px;
     font-size: 30px;
     position: absolute;
-    top: 260px;
 }
 
 .banner form {
-    width: 80%;
+    width: 84%;
     bottom: 50px;
     height: auto;
     display: flex;
-
+    justify-content: space-between;
     padding: 2px 8px;
     position: absolute;
     align-items: center;
@@ -99,39 +99,37 @@ header ul li a.active {
 
 .banner form button {
     width: 90px;
-    height: 35px;
+    height: 30px;
     border: none;
     color: #fff;
     font-weight: 500;
     background: #43215c;
-    margin-left: 5px;
-    cursor: pointer;
 }
 
 .banner form button.active {
-    background-color: #cd375d;
+    background: #FC2D4B;
 }
 
 .banner form label {
     display: none;
 }
 
-.banner form .search-form {
+.banner form .searchForm {
     margin-top: 8px;
 }
 
-.banner form .search-form input,
-.banner form .search-form select {
-    width: 18%;
+.banner form .searchForm input,
+.banner form .searchForm select {
+    width: 20% ;
     height: 35px;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 .banner form button.smt {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    background-color: #cd375d;
+    margin-left: 100px;
 }
 
 #cars {
@@ -155,41 +153,46 @@ header ul li a.active {
 
     .banner form .search-form input,
     .banner form .search-form select {
-        width: 30%;
+   
+        width: 100%; 
+        display: block;
+        margin: 5px;
     }
-
     .banner form {
-        left: 10%;
+        width: auto !important;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
     }
-}
-
-@media screen and (max-width: 767px){
-.banner form .searchForm input, .banner form .searchForm select {
-    width: 46%;
-}
-
-}
-@media (max-width: 563px){
-    .banner h1{
-        font-size: 30px;
-        top: 90px;
-    } 
-    .banner h2{
+    .banner h1 {
+        top: 60px;
+    }
+    .banner h2 {
         top: 193px;
-        font-size: 20px;
     }
-}
-@media (max-width: 480px) {
-    .banner h1{
-        font-size: 25px;
-        top: 100px;
-    } 
-    .banner h2{
-        top: 190px;
-        font-size: 20px;
+    .banner form button.smt {
+        width: 280px;
+        height: 35px;
+        border-radius: 0px;
+        margin: 10px auto;
     }
-  }
   
+}
+
+@media screen and (max-width:575px){
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        top: 156px;}
+        .banner form{
+            left: 15% !important;
+        }
+}
+
 /*===================================================== banner section end ===================================== */
 /*===================================================== fun section start ===================================== */
 .fun {
@@ -237,23 +240,29 @@ header ul li a.active {
 /* media query */
 @media (max-width: 991px) {
     .fun ul li {
-        margin-right: 20px;
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
     }
 }
-@media screen and (max-width: 767px){
-.fun ul {
-    margin-left: 8%;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 130px 130px;
-    grid-gap: 10px;
-}
-}
-@media (max-width: 563px){
-    .fun ul{
-        margin-left: 0%;
+
+@media screen and (max-width: 767px) {
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
     }
 }
+
+@media (max-width: 575px) {
+    .fun  {
+        padding-left: 0px !important;
+        padding-right: 40px ;
+    }
+}
+
 /*===================================================== fun section end ===================================== */
 /*===================================================== newsletter section start ===================================== */
 .newsletter {
@@ -312,7 +321,7 @@ input::placeholder {
 }
 
 /* media query */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .newsletter {
         padding: 0px;
     }
@@ -322,20 +331,29 @@ input::placeholder {
         margin-bottom: 0px;
     }
 }
-@media (max-width: 563px){
-    .newsletter h2{
+
+@media (max-width: 575px) {
+    .newsletter h2 {
         font-size: 22px;
-     
-    } 
-    .newsletter p{
+
+    }
+
+    .newsletter p {
         font-size: 10px;
     }
+
     input[type="button"] {
-      
+
         margin-top: 10px;
         width: 96%;
     }
+
+    input#email {
+       width: 96%;
+
+    }
 }
+
 /*===================================================== newsletter section end ===================================== */
 /*===================================================== destination section start ===================================== */
 .destination {
@@ -441,15 +459,31 @@ input[type="submit"] {
     bottom: 0;
     top: 0;
 }
-@media screen and (max-width:768px){
-  .estimate img{
-    display: none;
-  }  
-}
-@media (max-width: 480px) {
-    .estimate img{
+
+@media screen and (max-width:768px) {
+    .estimate img {
         display: none;
-      }   
+    }
+
+    .estimate form select,
+    .estimate form input {
+        width: 100%;
+        display: block;
+        margin: 8px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .estimate img {
+        display: none;
+    }
+
+    .estimate form select,
+    .estimate form input {
+        width: 100%;
+        display: block;
+       
+    }
 }
 
 /*===================================================== estimate section end ===================================== */
@@ -492,13 +526,22 @@ input[type="submit"] {
 }
 
 /* media query */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .blog h2+p {
         padding: 0px;
     }
-
     .blog-content {
+        display: block;
+    }
+}
+
+@media screen and (max-width:567px) {
+    .blog-content div {
         flex-direction: column;
+        align-items: center;
+    }
+    .blog-content div div{
+        padding: 30px;
     }
 }
 
@@ -590,52 +633,98 @@ input[type="submit"] {
     border-radius: 50%;
     padding: 5px 10px;
 }
+
 /* media query */
 @media screen and (max-width:767px) {
-    .topfoot{
-        flex-direction: column;
-        align-items: center;
-        /* display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-rows: auto;
-     padding: 0 50px; */
-    }   
-    .footlogo {
-        flex-direction: column;
-        align-items: center;
-    }
+   
 }
+
 
 /*===================================================== footer section end ===================================== */
 /*===================================================== media query start ===================================== */
 @media screen and (max-width:1199px) {
-
-    header,
-    .banner,
-    .fun,
-    .newsletter,
-    .destination,
-    .estimate,
-    .blog,
-    .footer {
-        padding-left: 50px;
-        padding-right: 50px;
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .banner form {
+        width: 86%;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        width: 17%;
+    }
+    .banner form button.smt {
+        float: right !important;
+        margin-left: 0px;
     }
 }
 
-@media screen and (max-width:767px) {
-
-    header,
-    .banner,
-    .fun,
-    .newsletter,
-    .destination,
-    .estimate,
-    .blog,
-    .footer {
-        padding-left: 10px;
-        padding-right: 10px;
+@media screen and (max-width:991px) {
+    .fun ul li {
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
+    }
+    .blog-content {
+        display: block;
+    }
+    footer .topfoot .left,
+    footer .topfoot .right{
+        display: block;
     }
 }
 
+@media screen and (max-width:767px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    header .nav{
+        display: none;
+    }
+    .banner form {
+        width: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        display: block;
+        width: 100%;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form button.smt {
+        width: 280px;
+        height: 35px;
+        border-radius: 0px;
+        margin: 10px auto;
+    }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+}
+@media screen and (max-width:575px){
+    
+}
 /*===================================================== media query end ===================================== */
