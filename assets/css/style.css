@@ -270,6 +270,13 @@ header ul li a.active {
         padding-left: 0px !important;
         padding-right: 40px !important;
     }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(2, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
+    }
 }
 
 /*===================================================== fun section end ===================================== */
@@ -420,7 +427,13 @@ div.content span {
         grid-gap: 20px;
     }
 }
-
+@media screen and (max-width:575px){
+    .destination ul {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+}
 /*===================================================== destination section end ===================================== */
 /*===================================================== estimate section start ===================================== */
 .estimate {
@@ -648,7 +661,9 @@ input[type="submit"] {
 @media screen and (max-width:991px) {
     .topfoot {
     
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,45%) !important;
+       
     }
     .country {
         margin-bottom: 50px;
@@ -657,7 +672,9 @@ input[type="submit"] {
         margin-bottom: 50px;
     }
     .footer .site div {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,100%);
+        grid-gap: 50px;
     }
     .footer .site .inner {
         margin-right: 0px;
@@ -673,7 +690,16 @@ input[type="submit"] {
         margin-bottom: 8px;
     }
 }
-
+@media screen and (max-width:575px){
+    .topfoot {
+        display: grid;
+        grid-template-columns: repeat(1,100%) !important;
+    }
+    .footer .site div {
+        grid-template-columns: repeat(1,100%);
+     
+    }
+}
 
 
 /*===================================================== footer section end ===================================== */
