@@ -126,10 +126,11 @@ header ul li a.active {
 }
 
 .banner form button.smt {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin-left: 100px;
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 50% !important;
+    margin-left: 100px !important;
+    background-color: #cd375d;
 }
 
 #cars {
@@ -171,16 +172,16 @@ header ul li a.active {
         top: 55px;
         
     }
-    }
+    
     .banner h2 {
-        top: 220px;
+        top: 240px;
         font-size: 17px;
     }
     .banner form button.smt {
-        width: 280px;
-        height: 35px;
-        border-radius: 0px;
-        margin: 10px auto;
+        width: 280px !important;
+        height: 35px !important;
+        border-radius: 0px !important;
+        margin: 10px auto !important;
     }
   
 }
@@ -195,7 +196,11 @@ header ul li a.active {
             left: 8% !important;
         }
 }
-
+@media screen and (max-width:365px){
+    .banner h1{
+        font-size: 25px;
+    }
+}
 /*===================================================== banner section end ===================================== */
 /*===================================================== fun section start ===================================== */
 .fun {
