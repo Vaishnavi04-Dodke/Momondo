@@ -80,13 +80,13 @@ header ul li a.active {
 }
 
 .banner h2 {
-    top: 230px;
+    top: 268px;
     font-size: 30px;
     position: absolute;
 }
 
 .banner form {
-    width: 84%;
+    width: 85%;
     bottom: 50px;
     height: auto;
     display: flex;
@@ -114,14 +114,17 @@ header ul li a.active {
     display: none;
 }
 
-.banner form .searchForm {
-    margin-top: 8px;
+.banner form .search-form {
+    display: none;
 }
-
-.banner form .searchForm input,
-.banner form .searchForm select {
-    width: 20% ;
-    height: 35px;
+.banner form .search-form.active {
+    margin-top: 8px;
+    display: block;
+}
+.banner form .search-form input,
+.banner form .search-form select {
+    width: 18~% ;
+    height: 25px;
     margin-right: 5px
 }
 
@@ -148,9 +151,8 @@ header ul li a.active {
     width: 5%;
     height: 0%;
 }
-
 /* media query */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 
     .banner form .search-form input,
     .banner form .search-form select {
@@ -170,12 +172,12 @@ header ul li a.active {
     }
     .banner h1 {
         top: 55px;
-        
+        font-size: 31px;
     }
     
     .banner h2 {
-        top: 240px;
-        font-size: 17px;
+        top: 170px;
+        font-size: 18px;
     }
     .banner form button.smt {
         width: 280px !important;
@@ -183,15 +185,17 @@ header ul li a.active {
         border-radius: 0px !important;
         margin: 10px auto !important;
     }
+    .banner form{
+        bottom: 0px;
+    }
   
 }
-
 @media screen and (max-width:575px){
     .banner h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
     .banner h2 {
-        top: 156px;}
+        top: 142px;}
         .banner form{
             left: 8% !important;
         }
@@ -199,6 +203,25 @@ header ul li a.active {
 @media screen and (max-width:365px){
     .banner h1{
         font-size: 25px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .banner form {
+        left: 3% !important;
+    }
+    .fun h2 {
+        margin-left: 22px;
+    }
+    section.newsletter form {
+        margin-left: 14px;
+    }
+    .footer {
+        padding-left: 31px;
+        padding-right: 0px;
+    }
+    footer {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 }
 /*===================================================== banner section end ===================================== */
@@ -278,7 +301,13 @@ header ul li a.active {
         grid-gap: 10px;
     }
 }
-
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  
+    .fun h2 {
+        margin-left: 22px;
+    }
+   
+}
 /*===================================================== fun section end ===================================== */
 /*===================================================== newsletter section start ===================================== */
 .newsletter {
@@ -369,7 +398,13 @@ input::placeholder {
 
     }
 }
-
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  
+    section.newsletter form {
+        margin-left: 14px;
+    }
+  
+}
 /*===================================================== newsletter section end ===================================== */
 /*===================================================== destination section start ===================================== */
 .destination {
@@ -701,7 +736,17 @@ input[type="submit"] {
     }
 }
 
-
+@media screen and (min-width: 320px) and (max-width: 374px) {
+   
+    .footer {
+        padding-left: 31px;
+        padding-right: 0px;
+    }
+    footer {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
 /*===================================================== footer section end ===================================== */
 /*===================================================== media query start ===================================== */
 @media screen and (max-width:1199px) {

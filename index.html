@@ -21,10 +21,11 @@
         <div><a href="index.html"><img src="assets/images/logo.png" alt="logo" width="100px" height="30px"></a></div>
         <div  class="nav">
         <ul>
-            <li><a href="javascript:void()" class="active">flights</a></li>
-            <li><a href="javascript:void()">hotel</a></li>
-            <li><a href="javascript:void()">cir fire</a></li>
-            <li><a href="javascript:void()">trip holder</a></li>
+            <li><a href="javascript:void(0)" class="active">flights</a></li>
+            <li><a href="javascript:void(0)">hotel</a></li>
+            <li><a href="javascript:void(0)">cir fire</a></li>
+            <li><a href="javascript:void(0)">trip holder</a></li>
+            
         </ul>
     </div>
         <ul>
@@ -42,11 +43,11 @@
         <form action="">
             <div>
                 <div class="switch-button">
-                    <button class="active"> <i class="fa-solid fa-plane-departure"></i>Flights</button>
-                    <button><i class="fa-solid fa-shop"></i>Hotels</button>
-                    <button><i class="fa-solid fa-car"></i>Travels</button>
+                    <button class="formlink active" data-form="flights"> <i class="fa-solid fa-plane-departure"></i>Flights</button>
+                    <button class="formlink " data-form="hotels"><i class="fa-solid fa-shop"></i>Hotels</button>
+                    <button class="formlink" data-form="travels"> <i class="fa-solid fa-car"></i>Travels</button>
                 </div>
-                <div class="search-form">
+                <div class="search-form active" id="flights">
                     <label for="orgin-city">orgin-city</label>
                     <!-- <input type="text" name="origin" id="origin-city" placeholder="&#xf041; Enter Origin City"> -->
                     <input type="text" name="origin" id="origin-city" placeholder="Enter Origin City">
@@ -88,8 +89,17 @@
                     <label for="checkbox">checkbox</label>
                     <input type="checkbox" name="flights" id="flights" value="direct-flights only">Nearby Airports
                 </div>
+                <div class="search-form" id="hotels">
+                    Hotels
+                   
+                </div>
+                <div class="search-form" id="travels">
+                    Cars
+                  
+                </div>
             </div>
             <div><button type="Submit" class="smt">Search</button></div>
+            
         </form>
 
     </section>
